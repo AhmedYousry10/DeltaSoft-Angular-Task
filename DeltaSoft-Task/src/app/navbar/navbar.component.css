@@ -1,0 +1,38 @@
+.nav-container{
+  background: #000;
+
+}
+.navbar {
+  padding: 1rem;
+  background: #2B2B2B;
+  margin: 0 3rem;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 30px;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.signup {
+  background: #A259FF;
+  border-color: #A259FF;
+  padding: 15px 30px;
+  font-weight: bold;
+  border-radius: 18px;
+}
+
+.signup:hover {
+  background-color: #7e3af2;
+  border-color: #7e3af2;
+}
+
+.signup img {
+  margin-right: 8px;
+
+}
+
+
