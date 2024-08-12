@@ -1,10 +1,14 @@
 .nav-container{
   background: #000;
-
 }
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,...'); /* Use this if you need to change the icon color */
+}
+
 .navbar {
-  padding: 1rem;
-  background: #2B2B2B;
+  padding: 1rem 2rem;
+  background: var(--background-color);
   margin: 0 3rem;
 }
 
@@ -18,16 +22,16 @@
 }
 
 .signup {
-  background: #A259FF;
-  border-color: #A259FF;
+  background: var(--main-color);
+  border-color: var(--main-color);
   padding: 15px 30px;
   font-weight: bold;
   border-radius: 18px;
 }
 
 .signup:hover {
-  background-color: #7e3af2;
-  border-color: #7e3af2;
+  background-color: var(--main-color-hover);
+  border-color: var(--main-color-hover);
 }
 
 .signup img {
