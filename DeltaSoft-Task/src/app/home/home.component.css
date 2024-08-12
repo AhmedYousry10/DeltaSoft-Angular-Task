@@ -48,9 +48,9 @@ section {
 
 .hero-image {
   position: relative;
-  background: #3B3B3B;
   border-radius: 18px;
   height: fit-content;
+  background: var(--second-color);
 }
 
 .hero-image img {
@@ -174,4 +174,96 @@ section {
   }
 }
 
+/* Top Creators Section */
 
+.ranking button{
+  background: var(--background-color);
+}
+
+.ranking button:hover {
+  background: var(--main-color);
+  border-color: var(--main-color);
+  color: white;
+}
+
+.ranking button img {
+  color: var(--main-color);
+}
+
+.creators-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Container for the cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Individual card styles */
+.card-item {
+  position: relative;
+  border: 1px solid var(--second-color);
+  border-radius: 20px;
+  padding: 15px;
+  background-color: var(--second-color);
+  text-align: center;
+  flex: 1 1 calc(25% - 15px);
+}
+
+.card-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background: var(--main-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #858584;
+  background: var(--background-color);
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-sales {
+  font-size: 16px;
+  color: #858584;
+}
+
+.card-sales span{
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .card-item {
+    flex: 1 1 calc(50% - 20px); /* 3 cards in a row for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-item {
+    flex: 1 1 calc(50% - 20px); /* 2 cards in a row for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .card-item {
+    flex: 1 1 100%; /* 1 card in a row for extra small screens */
+  }
+}
