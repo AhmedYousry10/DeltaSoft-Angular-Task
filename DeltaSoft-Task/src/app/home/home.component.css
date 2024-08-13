@@ -111,6 +111,87 @@ section {
   border-color: var(--main-color-hover);
 }
 
+/* Responsive design for tablet and mobile screens */
+@media screen and (max-width: 1024px) {
+  .hero-section {
+    gap: 4rem;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .hero-content p{
+    font-size: 18px;
+  }
+
+  .stat-item {
+    font-size: 28px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-stats {
+    gap: 1rem;
+  }
+
+  .stat-item {
+    font-size: 20px;
+  }
+
+  .start-btn button {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  .image-header h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .stat-item {
+    font-size: 18px;
+  }
+
+  .start-btn button {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+
+  .image-header h2 {
+    font-size: 18px;
+  }
+}
+
 /* Trending-Collection Section */
 
 .section-description {
@@ -208,7 +289,6 @@ section {
 }
 
 
-/* Container for the cards */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +296,6 @@ section {
   justify-content: space-between;
 }
 
-/* Individual card styles */
 .card-item {
   position: relative;
   border: 1px solid var(--second-color);
@@ -278,6 +357,9 @@ section {
 }
 
 @media (max-width: 576px) {
+  .creators-header{
+    display: block;
+  }
   .card-item {
     flex: 1 1 100%; 
   }
