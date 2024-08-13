@@ -12,6 +12,11 @@
   margin: 0 3rem;
 }
 
+@media (max-width: 1200px) {
+  .navbar {
+    margin: 0;
+  }
+}
 .nav-link {
   color: white;
   margin-right: 30px;
